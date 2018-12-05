@@ -1,0 +1,59 @@
+:Author: keljdoyle
+:Email: keljdoyle@yahoo.com
+:Date: 30/11/2018
+:Revision: version#
+:License: Public Domain
+
+= Project: {Project}
+
+This project demonstrates usage of the 'neopixel' style of addressable LED sreip with sample sketches.
+
+The Adafruit website has a great description of how these lights work and how to use them:
+https://learn.adafruit.com/adafruit-neopixel-uberguide?view=all
+
+== Step 1: Installation
+Import the project into your Arduino IDE.
+
+== Step 2: Assemble the circuit
+
+Assemble the circuit following the diagram layout.png attached to the sketch
+
+== Step 3: Load the code
+
+Upload the code contained in this sketch on to your board
+
+=== Folder structure
+
+....
+ addressable_leds                => Arduino sketch folder
+  ├── addressable_led.ino        => main Arduino file
+  └── ReadMe.adoc         => this file
+....
+
+
+=== BOM
+The bill of the materials you need for this project.
+
+|===
+| ID | Part name                              | Quantity
+| L1 | WS2812-type addressable LED strip *    | 1       
+| A1 | Arduino Uno                            | 1        
+| J1 | JST connector or 3 jumper cables **    | 1
+|===
+
+* This demo uses a 60 pixel, WS2812-style / Neopixel strip, such as the one sold here:
+https://www.amazon.com/gp/product/B01LSF4QDM/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1
+
+** Used to attach the light strip to the Arduino. For the purposes of this simple demo, 
+the Arduino has sufficient power for the 60 pixels in the LED strip. For more robust schematics,
+refer to the Adafruit diagram, above.
+
+The light strips listed here include a JST-style 3 prong connector for power, ground, and data pins.
+They can be wired to the Arduino via 3 male/male jumper wires or a JST adaper.
+https://en.wikipedia.org/wiki/JST_connector
+
+
+=== Help
+This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
+If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
